@@ -1,10 +1,61 @@
 // ******************************************************
+//                        APR/24/25   LEC 9 25 min Selection sort
+// ******************************************************
+//Q2  - SELECTION Sort
+// in the first rotation of j small elem will bw in LEFT
+/* 
+let arr  = [10,5,1,12,9];
+let n = arr.length;
+for(let i = 0; i < n-1; i++){
+    let minIndex = i;//2
+    for(let j = i+1;j < n;j++){
+        if(arr[minIndex] > arr[j]) minIndex = j;
+    }
+    if(minIndex != i){
+        let temp = arr[minIndex];
+        arr[minIndex] = arr[i];
+        arr[i] = temp;
+    }
+}
+// TC :-  o(n2);
+// SC :- o(n)
+console.log(arr)
+*/
+
+// DRY RUN  Phase 1 for i = 0
+// [10,5,1,12,9];//minIndex = i = 2
+//  i         j
+// [1,5,10,12,9];
+
+// DRY RUN  Phase 2 for i = 1
+// [1,5,10,12,9];//minIndex = i = 1 = 5
+//     i      j
+// [1,5,10,12,9]
+
+// DRY RUN  Phase 3 for i = 2
+// [1,5,10,12,9] //minIndex = i = 2 = 10
+//       i    j
+// [1,5,9,12,10]
+
+// DRY RUN  Phase 4 for i = 3
+//  [1,5,9,12,10] //minIndex = i = 4 = 10
+//          i  j
+// [1,5,9,10,12]
+// Completed
+
+
+// Q3 Insertion sort  41 min hold
+
+
+
+// ******************************************************
 //                        APR/23/25 START LEC 9 start 5 min
 // ******************************************************
-//Q1  buble sort me first rotation me max elem ko right end me lana hta hai 
+//Q1  buble sort me first rotation me max elem ko right end me lana hota hai 
 // algo :- if bubble is greater than right one swap else bubble ko handover krenge 
 
 /*
+// Q1 Bubble SORT 
 let arr = [48,25,36,12,1];
 let n = arr.length; //5
 //       0/1/2/3     3 < 5-1 = 4
@@ -18,6 +69,9 @@ for (let i = 0; i < n-1; i++) {
         }
     }    
 }
+
+// TC :-  o(n2);
+// SC :- o(n)
 
 // after phase 1  first iteration 
 // [25,48,36,12,1];
@@ -39,11 +93,10 @@ for (let i = 0; i < n-1; i++) {
 // [1,12,25,36,48];
 
 console.log(arr)
-// TC :-  o(n2);
-// SC :- o(n)
+
 */
 
-//Q2  - SELECTION Sort 
+
 
 
 // ******************************************************
@@ -1432,7 +1485,7 @@ console.log(s.charCodeAt(4))
 
 // console.log(7%2) //bhagfal deta hai
 // console.log(7/2) //seshfal deta hai
-// console.log(2%7) //devidend/diviser if left one small then output right one
+// console.log(2%7) //devidend/diviser if left one small then output left one
 // console.log(Math.floor(2/7)) // it will give ans in zero so use math .floor to get full purna sankhya
 
 // console.log(Math.floor(4568/10))
@@ -1481,7 +1534,7 @@ console.log(s.charCodeAt(4))
 //Template String***********************
 // let a = 10;
 // let b = 20;
-// console.log( "sum of 10 and 20 io" + a+b);
+// console.log( "sum of 10 and 20 is" + a+b);
 // console.log( a+b+" is sum of 10 and 20");
 
 // Concatination of String***************
