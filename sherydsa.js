@@ -1,5 +1,42 @@
 // ******************************************************
-//                        APR/24/25   LEC 9 25 min Selection sort
+//                        APR/26/25   LEC 10 REC
+// ******************************************************
+// Stack memory - LIFO
+// Operations - push , pop ,Peak 26.16 
+// print 1 to n 
+// print n to 1 
+// print usung back tracking 
+// print sum 
+// factorial of n number 
+//Nth Fibonacchi Number V1
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+/*
+let n = 7;
+let res = fib(n);
+console.log(res)
+function fib(n) {
+    if(n <= 1) return n;
+    let last = fib(n-1);
+    let slast = fib(n-2) 
+    return last + slast;
+}
+*/
+
+/*
+// sum of nth fib numbers  
+let n2 = 7;
+let fibres = sumOfnFib(n2);
+console.log(fibres);
+
+function sumOfnFib(n){
+    if(n <= 1) return n;
+    return sumOfnFib(n-1) + sumOfnFib(n-2);
+}
+*/
+
+
+// ******************************************************
+//                        APR/24|25/25   LEC 9 25 min Selection sort
 // ******************************************************
 //Q2  - SELECTION Sort
 // in the first rotation of j small elem will bw in LEFT
@@ -43,10 +80,55 @@ console.log(arr)
 // [1,5,9,10,12]
 // Completed
 
+/*
+// APR/26/25
+// Q3 Insertion sort  
+let arr = [10,5,1,12,9];
+let n = arr.length;
 
-// Q3 Insertion sort  41 min hold
+for (let i = 1; i < n; i++) {
+    let key = arr[i];
+    let j = i-1;
+    while(j>=0 && arr[j] > key){
+        arr[j+1]  = arr[j];
+        j--;
+    }    
+    arr[j+1] = key;
+}
+// TC :-  o(n2);
+// SC :- o(n)
+console.log(arr);
+*/
+
+// DRY RUN PHASE 1 
+// [10,|5,1,12,9] key = 5 / j = 10
+//   j  i
+// [10,|10,1,12,9]
+//j j+1   i
+// [5,|10,1,12,9] key filled in j+1 place
+
+// DRY RUN PHASE 2
+// [5,10,| 1,12,9] key = 1 / j = 10
+//     j   i
+//   [5,10,|10,12,9]
+//    j      i
+//   [5,5,|10,12,9]
+//  j   j+1     i
+//   [1,5,10,|12,9]
+// j j+1     i
+
+// DRY RUN PHASE 3
+//  [1,5,10,|12,9] key = 12 / j = 10
+//        j  i
 
 
+// DRY RUN PHASE 4
+//  [1,5,10,12,|9] key = 9 / j = 12
+//          j   i
+// [1,5,10,12,|12]
+//       j      i
+// [1,5,9,10,|12]
+//    j j+1       i
 
 // ******************************************************
 //                        APR/23/25 START LEC 9 start 5 min
