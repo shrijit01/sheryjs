@@ -1,4 +1,69 @@
 // ******************************************************
+//                        APR/29/25   LEC 11 REC
+// ******************************************************
+// GCD | HCF 
+/*
+let n1 = 32,n2 = 20;
+// let n1 = 52,n2 = 10;
+let res = gcdFun(n1,n2);
+console.log(res);
+
+
+function gcdFun(n1,n2){
+    let gcd = 0;
+    for(let i = 1 ; i <= Math.min(n1,n2); i++){
+        if(n1%i == 0 && n2 %i == 0){
+            gcd = i;
+        }
+    }
+    return gcd;
+}
+*/
+
+/*
+// optimal 
+function gcdFun(a,b){
+    while(a > 0 && b > 0){
+        if(a > b ) a = a % b;
+        else b = b %a;
+    }
+    if(a == 0) return b;
+    else return a;
+}
+    TC :- log(max(a,b));
+*/
+
+//recursive minus approch
+/*
+let n1 = 32,n2 = 20;
+// let n1 = 52,n2 = 10;
+let res = gcdRec(n1,n2);
+console.log(res);
+
+function gcdRec(a,b){
+    if(a ==  b) return a;
+    if(a > b) return gcdRec(a-b,b);
+    return gcdRec(b,b-a);
+}
+*/
+
+// recursive Main 
+/*
+function gcdRec(params) {
+    if(b == 0) return a;
+    return gcdRec(b,a%b);
+}
+    TC :- log(max(a,b));
+*/
+
+// FACTORS OF NUMBER OPTIMAL 
+// i <= Math.sqrt(n); is same as i*i <= n 
+
+
+// count of Primes  brute force seve of ethroseries 42
+
+
+// ******************************************************
 //                        APR/26/25   LEC 10 REC
 // ******************************************************
 // Stack memory - LIFO
