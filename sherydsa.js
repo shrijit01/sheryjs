@@ -61,8 +61,24 @@ function gcdRec(params) {
 
 
 // count of Primes  brute force seve of ethroseries 42
+let n = 30;
+let arr = new Array(n+1).fill(true) 
 
+for(let i = 2;i<= Math.floor(Math.sqrt(n));i++){
+    if(arr[i]){
+        for(let j = i*i ; j <= n; j += i){
+            arr[j] = false;
+        }
+    }
+}
 
+for(let i = 2;i< arr.length;i++){
+    if(arr[i]) process.stdout.write(i + " ");
+}
+
+// TC :- 0(log(log(n)));
+// sc :- 0(1)
+ 
 // ******************************************************
 //                        APR/26/25   LEC 10 REC
 // ******************************************************
