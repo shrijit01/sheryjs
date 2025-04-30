@@ -59,7 +59,7 @@ function gcdRec(params) {
 // FACTORS OF NUMBER OPTIMAL 
 // i <= Math.sqrt(n); is same as i*i <= n 
 
-
+/*
 // count of Primes  brute force seve of ethroseries 42
 let n = 30;
 let arr = new Array(n+1).fill(true) 
@@ -71,13 +71,29 @@ for(let i = 2;i<= Math.floor(Math.sqrt(n));i++){
         }
     }
 }
-
 for(let i = 2;i< arr.length;i++){
     if(arr[i]) process.stdout.write(i + " ");
 }
-
 // TC :- 0(log(log(n)));
 // sc :- 0(1)
+*/
+
+/*
+// pow (X,n);--
+let x = 2;
+let n = 10;
+function pow(x,n){
+    if(n == 0) return 1.0;
+    let ans = temp(x,n);
+    return (n<0) ? 1/ans :ans;
+}
+var temp = function(x,n){
+    if(n == 0) return 1;
+    let ans = temp (x,parseInt((n/2)));
+    if(n%2 == 0)return ans * ans;
+    return ans*ans*x;
+}
+*/
  
 // ******************************************************
 //                        APR/26/25   LEC 10 REC
