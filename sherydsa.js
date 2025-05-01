@@ -1,4 +1,32 @@
 // ******************************************************
+//                        MAY/01/25   LEC 12 BS
+// ******************************************************
+/*
+let arr = [1, 2, 3, 4, 5, 6];
+let f = 0;
+let l = arr.length - 1;//5
+let index = binarySearch(arr,f,l,6);
+
+if(index == -1 ) console.log("Element not found");
+else console.log("Element found at " + index + "th index");
+
+function binarySearch(arr, f, l, target) {
+  while (f <= l) {//0  < 5, 3<5 ,  5<5
+    let mid = Math.floor((f + l) / 2);//3//5//6               - value
+    if (arr[mid] == target) return mid;
+    else if (arr[mid] > target) {
+      l = mid - 1;
+    } else {
+      f = mid + 1;
+    }
+  }
+  return -1;
+}
+*/
+// TC :- log(n); because number of iteration is decreasing drastically
+//SC :- o(1)
+
+// ******************************************************
 //                        APR/30/25   LEC 11 REC
 // ******************************************************
 /*
