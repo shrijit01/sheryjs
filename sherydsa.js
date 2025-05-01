@@ -1,7 +1,46 @@
 // ******************************************************
+//                        APR/30/25   LEC 11 REC
+// ******************************************************
+/*
+// count of Primes  brute force seve of ethroseries 42
+let n = 30;
+let arr = new Array(n+1).fill(true) 
+
+for(let i = 2;i<= Math.floor(Math.sqrt(n));i++){
+    if(arr[i]){
+        for(let j = i*i ; j <= n; j += i){
+            arr[j] = false;
+        }
+    }
+}
+for(let i = 2;i< arr.length;i++){
+    if(arr[i]) process.stdout.write(i + " ");
+}
+// TC :- 0(log(log(n)));
+// sc :- 0(1)
+*/
+
+/*
+// pow (X,n);--
+let x = 2;
+let n = 10;
+function pow(x,n){
+    if(n == 0) return 1.0;
+    let ans = temp(x,n);
+    return (n<0) ? 1/ans :ans;
+}
+var temp = function(x,n){
+    if(n == 0) return 1;
+    let ans = temp (x,parseInt((n/2)));
+    if(n%2 == 0)return ans * ans;
+    return ans*ans*x;
+}
+*/
+
+// ******************************************************
 //                        APR/29/25   LEC 11 REC
 // ******************************************************
-// GCD | HCF 
+// GCD | HCF
 /*
 let n1 = 32,n2 = 20;
 // let n1 = 52,n2 = 10;
@@ -47,7 +86,7 @@ function gcdRec(a,b){
 }
 */
 
-// recursive Main 
+// recursive Main
 /*
 function gcdRec(params) {
     if(b == 0) return a;
@@ -56,55 +95,19 @@ function gcdRec(params) {
     TC :- log(max(a,b));
 */
 
-// FACTORS OF NUMBER OPTIMAL 
-// i <= Math.sqrt(n); is same as i*i <= n 
+// FACTORS OF NUMBER OPTIMAL
+// i <= Math.sqrt(n); is same as i*i <= n
 
-/*
-// count of Primes  brute force seve of ethroseries 42
-let n = 30;
-let arr = new Array(n+1).fill(true) 
-
-for(let i = 2;i<= Math.floor(Math.sqrt(n));i++){
-    if(arr[i]){
-        for(let j = i*i ; j <= n; j += i){
-            arr[j] = false;
-        }
-    }
-}
-for(let i = 2;i< arr.length;i++){
-    if(arr[i]) process.stdout.write(i + " ");
-}
-// TC :- 0(log(log(n)));
-// sc :- 0(1)
-*/
-
-/*
-// pow (X,n);--
-let x = 2;
-let n = 10;
-function pow(x,n){
-    if(n == 0) return 1.0;
-    let ans = temp(x,n);
-    return (n<0) ? 1/ans :ans;
-}
-var temp = function(x,n){
-    if(n == 0) return 1;
-    let ans = temp (x,parseInt((n/2)));
-    if(n%2 == 0)return ans * ans;
-    return ans*ans*x;
-}
-*/
- 
 // ******************************************************
 //                        APR/26/25   LEC 10 REC
 // ******************************************************
 // Stack memory - LIFO
-// Operations - push , pop ,Peak 26.16 
-// print 1 to n 
-// print n to 1 
-// print usung back tracking 
-// print sum 
-// factorial of n number 
+// Operations - push , pop ,Peak 26.16
+// print 1 to n
+// print n to 1
+// print usung back tracking
+// print sum
+// factorial of n number
 //Nth Fibonacchi Number V1
 // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
 /*
@@ -130,7 +133,6 @@ function sumOfnFib(n){
     return sumOfnFib(n-1) + sumOfnFib(n-2);
 }
 */
-
 
 // ******************************************************
 //                        APR/24|25/25   LEC 9 25 min Selection sort
@@ -197,7 +199,7 @@ for (let i = 1; i < n; i++) {
 console.log(arr);
 */
 
-// DRY RUN PHASE 1 
+// DRY RUN PHASE 1
 // [10,|5,1,12,9] key = 5 / j = 10
 //   j  i
 // [10,|10,1,12,9]
@@ -218,7 +220,6 @@ console.log(arr);
 //  [1,5,10,|12,9] key = 12 / j = 10
 //        j  i
 
-
 // DRY RUN PHASE 4
 //  [1,5,10,12,|9] key = 9 / j = 12
 //          j   i
@@ -230,8 +231,8 @@ console.log(arr);
 // ******************************************************
 //                        APR/23/25 START LEC 9 start 5 min
 // ******************************************************
-//Q1  buble sort me first rotation me max elem ko right end me lana hota hai 
-// algo :- if bubble is greater than right one swap else bubble ko handover krenge 
+//Q1  buble sort me first rotation me max elem ko right end me lana hota hai
+// algo :- if bubble is greater than right one swap else bubble ko handover krenge
 
 /*
 // Q1 Bubble SORT 
@@ -275,13 +276,10 @@ console.log(arr)
 
 */
 
-
-
-
 // ******************************************************
 //                        APR/22/25 START LEC 9 start
 // ******************************************************
-// watch till 4 min 
+// watch till 4 min
 
 // ******************************************************
 //                        APR/13/25 START LEC 8 complete
@@ -338,7 +336,6 @@ for (let i = 1; i <= n; i++) {
     console.log()
 }
 */
-
 
 /*
 * * * * * 
@@ -453,37 +450,33 @@ for(let i = 1; i <= n; i++){
 }
 */
 
-
-
 // ******************************************************
 //                        APR/12/25 START LEC 7 31 min
 // ******************************************************
-// TC ,TLE 
-// VIdeo 7 done 
-// Video 8 started pattern programming 
+// TC ,TLE
+// VIdeo 7 done
+// Video 8 started pattern programming
 
 // let prompt = require("prompt-sync")();
 // let a = prompt("Enter Number -> ");
 // process.stdout.write(a);
 // 9 :27
 
-
 // ******************************************************
 //                        APR/10/25 START LEC 7 8min
 // ******************************************************
 // Binary Search - O log n
-// till 30 min 
+// till 30 min
 
 // ******************************************************
 //                        APR/09/25 START LEC 7
 // ******************************************************
-// 7min 52 sec 
-
+// 7min 52 sec
 
 // ******************************************************
 //                        APR/08/25 START LEC 7
 // ******************************************************
-// time complexity 
+// time complexity
 
 // ******************************************************
 //                        APR/05/25 START from 1hr
@@ -531,7 +524,7 @@ for(let i = 1; i <= n; i++){
 //     if(arr[i] < min) min = arr[i];
 //     let profit = arr[i] - min;
 //     maxprofit = Math.max(maxprofit,profit);
-    
+
 // }
 
 // console.log(min)
@@ -569,7 +562,6 @@ for(let i = 1; i <= n; i++){
 // }
 // console.log(max)
 // console.log(sum)
-
 
 // Q5 Majority elem Moore's voting algo OPTIMIZED IN LEETCODE**************
 // let arr = [2,2,1,1,1,2,2];
@@ -613,7 +605,6 @@ for(let i = 1; i <= n; i++){
 // console.log(ans)
 // Video 8 completed at 5:51 Date 5/4/25
 
-
 // ------------------------------------------------------
 
 // ******************************************************
@@ -644,8 +635,7 @@ for(let i = 1; i <= n; i++){
 //     }
 // }
 
-
-// Q2 remove duplicates from sorted array 
+// Q2 remove duplicates from sorted array
 
 // let arr = [0,0,1,1,2,3,3,4];
 // let j = 1;
@@ -658,12 +648,12 @@ for(let i = 1; i <= n; i++){
 // }
 // console.log(arr)
 
-//1:00:00 min 
+//1:00:00 min
 
 // ******************************************************
 //                        APR/01/25 START from 30 min
 // ******************************************************
-/*Q3 Left and right Rotation By k Element BRUTE FORCE  -- PDQ*/ 
+/*Q3 Left and right Rotation By k Element BRUTE FORCE  -- PDQ*/
 /* 
 let arr = [1,2,3,4,5];
 
@@ -695,7 +685,6 @@ console.log(count)
 // }
 // console.log("Temp at the End ",temp);
 
-
 /* Q2 RIght  Rotation By k Element LESS-OPTIMIZED */
 // let arr = [1,2,3,4,5];
 // let temp = new Array(arr.length);
@@ -704,11 +693,10 @@ console.log(count)
 // k = k % arr.length;
 
 // for(let i = 0; i < arr.length;i++){
-//     temp[(i+k)%arr.length] = arr[i] 
+//     temp[(i+k)%arr.length] = arr[i]
 //     // console.log(`temp[${i}]`,temp[i],arr[(i+k)%arr.length]);
 // }
 // console.log("Temp at the End ",temp);
-
 
 /* Q3 USing reversal  FULL-OPTIMIZED*/
 // let arr = [1,2,3,4,5];
@@ -738,9 +726,7 @@ console.log(count)
 //         j--;
 //     }
 // }
-// 48min right rotation 
-
-
+// 48min right rotation
 
 // ******************************************************
 //                        MAR/31/25 START
@@ -760,7 +746,7 @@ arr[arr.length-1] = copy;
 console.log(arr);
 */
 
-/*Q2 right Rotation By 1 Index */ 
+/*Q2 right Rotation By 1 Index */
 /* 
 let arr = [1,2,3,4,5];
 //         5,1,2,3,4
@@ -772,36 +758,35 @@ for(let i = arr.length - 1; i > 0; i--){
 arr[0] = copy;
 console.log(arr)
 */
-                 
 
-                    /***************************
+/***************************
                              STRING Video 5
                     ************************** */
 // Q1 Print each character on new line*****
 // let str = "sparsh";
 // for(let i =  0 ; i < str.length; i++){
 //     console.log(str.charAt(i)+"\n");
-// } 
+// }
 
 // Q2  print in reverse order ****************
 // let str = "sparsh";//hsraps
 // let rev = "";
 // for(let i =  str.length - 1 ; 1 , i >= 0; i-- ){
 //     rev += str.charAt(i);
-// } 
+// }
 // console.log(rev)
 
-/* Q4 V1 palindrome string */ //brute force  
+/* Q4 V1 palindrome string */ //brute force
 // let str = prompt("Enter palindrome String ")
 // let rev = "";
 // for(let i =  str.length - 1 ; 1 , i >= 0; i-- ){
 //     rev += str.charAt(i);
-// } 
-// if(rev === str)console.log("Palindrome hai") 
+// }
+// if(rev === str)console.log("Palindrome hai")
 // else console.log("not palindrome")
 
-/* **Q4 V2***************OPTIMIZED******************* */ 
-// No extra space 
+/* **Q4 V2***************OPTIMIZED******************* */
+// No extra space
 // let str ="madam";
 // let i = 0,j = str.length -1;
 // let isPalindrome = true;
@@ -845,9 +830,7 @@ console.log(arr)
 //     }
 // }
 
-
 // ----------------------------------------------------
-
 
 /* *******************************************************
 // ***********String methods and function ***************
@@ -873,8 +856,6 @@ console.log(s.split(""));// it breaks a string into indivisual character
 console.log(s.charAt(4))
 console.log(s.charCodeAt(4))
 */
-
-
 
 // ---------------------------------------------------
 
