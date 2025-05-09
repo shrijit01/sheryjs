@@ -2,6 +2,7 @@
 //              MAY/09/25   LEC 13 Merge sort(divide and conqueror)
 // ******************************************************
 // sort and merge 
+/*
 function conqueror(arr,first,mid,last){//log(n)
     let temp = new Array(last-first+1);
     let i = first,j = mid +1 , k = 0;
@@ -36,7 +37,7 @@ divide(arr,0,arr.length-1); //n*logn
 console.log(arr)
 // TC  
 // sc = on(n)
- 
+ */
 // ******************************************************
 //                        MAY/01/25   LEC 12 BS
 // ******************************************************
