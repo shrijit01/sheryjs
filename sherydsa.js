@@ -1,4 +1,24 @@
 // ******************************************************
+//              MAY/11/25   LEC 15 Cyclic sort 
+// ******************************************************
+/*
+let arr = [8,7,6,5,4,3,2,1];
+
+let i = 0;
+while(i < arr.length){
+    let cIdx = arr[i] - 1;
+    if(arr[i] != arr[cIdx]){
+        let temp = arr[i];
+        arr[i] = arr[cIdx];
+        arr[cIdx] = temp;
+    }else i++;
+}
+console.log(arr)
+// TC :- o(n);
+// SC:- O(1)
+*/
+
+// ******************************************************
 //              MAY/11/25   LEC 14 Quick sort (pivot and partition)
 // ******************************************************
 // Quick sort
