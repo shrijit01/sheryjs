@@ -1,4 +1,55 @@
 // ******************************************************
+//              MAY/11/25   LEC 14 Quick sort (pivot and partition)
+// ******************************************************
+// Quick sort
+
+/*
+function findPivotidx(arr,first,last){//0(n)
+ let  pidx = arr[first];
+ let i = first + 1,j = last;
+ while(i <= j){
+    while(i <= last && arr[i] <= pidx) i++;
+    while(j >= first && arr[j] > pidx) j--;
+    if(i<j){
+        swap(arr,i,j);
+    }
+ }
+ swap(arr,j,first);
+ return j;
+}
+
+function quickSort(arr,first,last){//log(n)
+    if(first >= last )return
+    let pidx = findPivotidx(arr,first,last);
+    quickSort(arr,first,pidx-1);
+    quickSort(arr,pidx+1,last);
+}
+function swap(arr,i,j){
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+}
+
+let arr = [15,23,78,95,34]
+quickSort(arr,0,arr.length-1);
+console.log(arr)
+
+// In avg and best case 
+// TC :- n log(n)4
+// SC :- 0(1)
+// WORST CASE  --------- if arr is sorted in asc or dec order
+// TC :- (n)square
+// SC :- 0(1)
+===============================================
+****use case of Merge sort and quick sort ****
+when we can use more space but not time use merge sort 
+when we can use more time but  not space use quick sort
+===============================================
+
+*/
+
+
+// ******************************************************
 //              MAY/09/25   LEC 13 Merge sort(divide and conqueror)
 // ******************************************************
 // sort and merge 
