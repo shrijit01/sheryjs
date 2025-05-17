@@ -1,4 +1,35 @@
 // ******************************************************
+//              MAY/17/25   LEC 17 (Search in rotated sorted array)
+// ******************************************************
+/*
+let arr = [4,5,6,7,0,1,2];
+let target = 0;
+let first = 0,last = arr.length -1;
+let ans = searchInROtatedArr(arr,first,last,target);
+console.log(ans);
+
+
+function searchInROtatedArr(arr,first,last,target){
+    while(first <= last){
+        let mid = Math.floor((first+last)/2);
+        if(arr[mid] == target){
+            return mid;
+        }
+        if(arr[first] <= arr[mid]){
+            if(target >= arr[first] && target <= arr[mid]) last = mid;
+            else first = mid +1 ;
+        }else {
+            if(target >= arr[mid +1] && target <= arr[last]) first = mid +1;
+            else last = mid;
+        }
+    }
+    return -1;
+}
+// TC :- O(log n)
+// SC :- O(1)
+*/
+
+// ******************************************************
 //              MAY/17/25   LEC 16 (Search insert position bs)
 // ******************************************************
 //#done and dusted 
