@@ -1,4 +1,33 @@
 // ******************************************************
+//              MAY/17/25   LEC 16 (Search insert position bs)
+// ******************************************************
+//#done and dusted 
+/*
+let arr = [1,3,5,6];
+let target = 2;
+
+let ans = findInsert(arr,0,arr.length -1,target)
+console.log(ans);
+
+function findInsert(arr,f,l,target){
+    while (f <= l){
+        let mid = Math.floor((f+l)/2);
+        if(arr[mid] == target ){
+            return mid;
+        }else if(arr[mid] > target ){
+            l = mid -1;
+        }else {
+            f = mid +1 ;
+        }
+    }
+    return f;
+}
+
+TC :-O(logn)
+SC :- o(1)
+*/
+
+// ******************************************************
 //              MAY/11/25   LEC 15 Cyclic sort 
 // ******************************************************
 /*
