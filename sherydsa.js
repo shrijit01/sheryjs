@@ -1568,11 +1568,11 @@ console.log(s.charCodeAt(4))
 // let amount = 5234;
 // if(amount >= 500){
 //     console.log("500 Notes :" + Math.floor(amount / 500));
-//     amount = amount  %  500;
+//     amount = amount  %  500;//234
 // }
 // if(amount >= 200){
 //     console.log("200 Notes :" + Math.floor(amount / 200));
-//     amount = amount  %  200;
+//     amount = amount  %  200;//34
 // }
 // if(amount >= 100){
 //     console.log("100 Notes :" + Math.floor(amount / 100));
@@ -1584,11 +1584,11 @@ console.log(s.charCodeAt(4))
 // }
 // if(amount >= 20){
 //     console.log("20 Notes :" + Math.floor(amount / 20));
-//     amount = amount  %  20;
+//     amount = amount  %  20;//14
 // }
 // if(amount >= 10){
 //     console.log("10 Notes :" + Math.floor(amount / 10));
-//     amount = amount  %  10;
+//     amount = amount  %  10;//4
 // }
 // if(amount >= 5){
 //     console.log("5 Notes :" + Math.floor(amount / 5));
@@ -1596,7 +1596,7 @@ console.log(s.charCodeAt(4))
 // }
 // if(amount >= 2){
 //     console.log("2 Notes :" + Math.floor(amount / 2));
-//     amount = amount  %  2;
+//     amount = amount  %  2;//2
 // }
 // if(amount === 1){
 //     console.log("1 Notes :" + amount / 1);
@@ -1629,7 +1629,7 @@ console.log(s.charCodeAt(4))
 // }
 // Type 2  ----
 //********** */ Fall through condition  if switch case not get break *********
-
+// let day = 1;
 // switch (day) {
 //   case 1:
 //   case 2:
@@ -1661,6 +1661,7 @@ console.log(s.charCodeAt(4))
 //     break
 //     default:console.log("Namaste");
 // }
+// console.log( 0.2+0.3)//0.5
 
 // let num = 0.1+0.2;
 
@@ -1671,7 +1672,7 @@ console.log(s.charCodeAt(4))
 //     break
 //     default:console.log("Namaste"); //this will print namaste because of imprecision
 // }
-
+// console.log( 0.1+0.2)//0.30000000000000004
 //Switch Case --------------------------
 
 //21/MAR/25*******************************
@@ -1687,7 +1688,7 @@ console.log(s.charCodeAt(4))
 
 // console.log(NaN === NaN)//False
 // console.log(isNaN(NaN))//true
-
+// console.log(typeof NaN)//Number
 // shop discount ********************
 // (discount percentage *amount) /100 ;DISCOUNT FORMULA
 
@@ -1788,9 +1789,9 @@ console.log(s.charCodeAt(4))
 // i = i++ + ++i;
 // console.log(i)
 //2*************
-// let a = 11 ,b = 12;//14
-// let c = a + b + a++ + b++ + ++a + ++b;
-// console.log(a)//13
+// let a = 11 ,b = 12;//14 , 13                14
+// let c = a + b + a++ + b++ + ++a + ++b;//73
+// console.log(a)//13          13     14
 // console.log(b)//14
 // console.log(c)//73
 //3************
